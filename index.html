@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather App</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('images/34283.png');
+
+            padding-top: 150px;
+        }
+
+     .container form input{
+            border-radius: 10px;
+            border: none;
+            color: #06283D;
+            width: 80%;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding-left: 28px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3 rounded-8">
+                <input id="city-name" type="text" class="w-75 p-3 form-control rounded-9" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button onclick="searchTemperature()" type="button" class="btn btn-dark">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="image-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h1 id="city">Dhaka</h1>
+            <h3><span id="temp">38.06</span>&deg;C</h3>
+            <h1 class="lead" id="weather">Clouds</h1>
+            <h1 class="lead" >Humidity: % <span id="humidity">39</span></h1>
+        </div>
+    </div>
+<script src="js/app.js "></script>
+</body>
+
+</html>
